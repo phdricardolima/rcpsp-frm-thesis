@@ -1,0 +1,16 @@
+﻿=== LoadExperimentalCharts started: 2026-07-04 19:36:55.161 ===
+2026-07-04 19:36:55.162  Entered LoadExperimentalCharts. InvokeRequired=False IsDisposed=False Disposing=False
+2026-07-04 19:36:55.162  Loading baseline metadata and Baseline/FRM/Risk/Sensitivity/Stability charts...
+2026-07-04 19:36:56.892  Baseline/FRM/Risk/Sensitivity/Stability charts added. _chartsFlow.Controls.Count=24
+2026-07-04 19:36:56.892  Starting AddCrashingCharts (background CSV parse of todos_crashing.csv)...
+2026-07-04 19:37:03.107  AddCrashingCharts finished. IsDisposed=False Disposing=False Controls.Count=30
+2026-07-04 19:37:03.107  Starting AddDominanceCharts (background CSV parse of dominance.csv)...
+2026-07-04 19:37:05.063  AddDominanceCharts finished. IsDisposed=False Disposing=False Controls.Count=33
+2026-07-04 19:37:05.063  Adding Modified DH B&B versus heuristics charts...
+2026-07-04 19:37:05.102  Modified DH B&B versus heuristics charts added. Controls.Count=64
+2026-07-04 19:37:05.102  Adding MaxCombo/Correlation/StratifiedRisk/Proposition charts...
+2026-07-04 19:37:05.181  MaxCombo/Correlation/StratifiedRisk/Proposition charts added. Controls.Count=69
+2026-07-04 19:37:05.260  AddBalanceDiagnosticsCharts added. Total Controls.Count=71. Proceeding to autosave.
+2026-07-04 19:37:05.261  Calling AutoSaveAllExperimentalCharts. EnumerateExperimentalCharts() currently yields 69 chart(s). Target folder: C:\Users\ricar\OneDrive\Documents\Chapter4_Results-FINAL\04_charts\analysis_charts
+2026-07-04 19:37:09.157  AutoSaveAllExperimentalCharts returned OK. Folder: C:\Users\ricar\OneDrive\Documents\Chapter4_Results-FINAL\04_charts\analysis_charts. Directory.Exists=True. File count now=139
+2026-07-04 19:37:09.407  === LoadExperimentalCharts completed successfully. ===

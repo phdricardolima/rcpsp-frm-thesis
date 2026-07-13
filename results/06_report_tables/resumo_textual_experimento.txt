@@ -1,0 +1,11 @@
+﻿Automatic summary of the experimental study
+
+Baselines gerados: 9414
+Generated FRM diagnostics: 9414
+Main Monte Carlo runs: 9414
+Exported crashing scenarios: 200229
+Spearman correlation between global SIF and relative CVaR95 in baselines: -0.224754
+Spearman correlation between global SIF and delay CVaR95 in baselines: 0.038855
+Automatic interpretation (relative CVaR): fraca negativa
+
+This text is an automatic summary and must be reviewed before being incorporated into Chapter 4.

@@ -1,0 +1,5 @@
+﻿Experimental analysis charts auto-export
+Generated at: 2026-07-04 19:37:09
+Charts exported: 69
+Each chart is saved as a PNG image and an XLSX workbook with the underlying chart series data.
+Folder: C:\Users\ricar\OneDrive\Documents\Chapter4_Results-FINAL\04_charts\analysis_charts

@@ -1,0 +1,15 @@
+﻿{
+  "framework_mode": "FRM_WORKCONTENT_BILATERAL",
+  "risk_metric": "Delay_CVaR95 and Delay_CVaR95_Relative",
+  "frri_formula": "(Delay_CVaR95_original - Delay_CVaR95_crashing) / Delay_CVaR95_original",
+  "classes": {
+    "EFFICIENT": "delta_makespan < 0 and risk decreases and SIF is preserved or increased",
+    "EFFICIENT_COM_TRADEOFF": "delta_makespan < 0 and risk decreases, but SIF decreases",
+    "FAST_BUT_HIGH_RISK": "delta_makespan < 0 and risk does not decrease",
+    "ROBUST_BUT_SLOW": "delta_makespan >= 0 and risk decreases and SIF is preserved or increased",
+    "AMBIGUOUS": "all remaining combinations",
+    "BASELINE": "original uncompressed baseline scenario"
+  },
+  "dominance_primary": "makespan <=, SIF >=, relative Delay_CVaR95 <=, with at least one strict improvement",
+  "absorption_fields": ["balance_rupture_probability", "mean_balance_usage", "mean_unabsorbed_work", "mean_unabsorbed_work_ratio"]
+}

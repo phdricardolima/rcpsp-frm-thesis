@@ -12,10 +12,16 @@
 *.cer
 *.key
 *.tmp
+*.log
+*.csv
+*.png
+*.jpg
+*.jpeg
 *.temp
 *.bak
 *.cache
 *.nupkg
+*.json
 __pycache__/
 *.py[cod]
 .pytest_cache/
