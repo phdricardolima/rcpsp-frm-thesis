@@ -22,6 +22,7 @@
 *.cache
 *.nupkg
 *.json
+*.py
 __pycache__/
 *.py[cod]
 .pytest_cache/
