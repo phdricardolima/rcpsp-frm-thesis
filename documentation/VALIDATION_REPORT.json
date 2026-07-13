@@ -1,0 +1,81 @@
+{
+  "audit_scope": "Static structure, syntax, project graph, repository hygiene, traceability comments, and publication metadata.",
+  "overall_status": "PASS_WITH_ENVIRONMENTAL_LIMITATION",
+  "environmental_limitation": "A full VSTO/.NET Framework compilation and Microsoft Project functional test require Windows, Visual Studio 2022, .NET Framework 4.8, Office/VSTO tooling, and Microsoft Project. They were not available in this audit environment.",
+  "checks": {
+    "required_structure": {
+      "ok": true,
+      "detail": {
+        "missing": []
+      }
+    },
+    "xml_parse": {
+      "ok": true,
+      "detail": []
+    },
+    "project_items_and_references": {
+      "ok": true,
+      "detail": []
+    },
+    "solution_projects": {
+      "ok": true,
+      "detail": []
+    },
+    "csharp_syntax": {
+      "ok": true,
+      "detail": []
+    },
+    "comments_policy": {
+      "ok": true,
+      "detail": {
+        "total": 14,
+        "non_trace": []
+      }
+    },
+    "unused_private_static_scan": {
+      "ok": true,
+      "detail": []
+    },
+    "artifact_hygiene": {
+      "ok": true,
+      "detail": []
+    },
+    "sensitive_text_scan": {
+      "ok": true,
+      "detail": []
+    },
+    "removed_reference_scan": {
+      "ok": true,
+      "detail": []
+    },
+    "citation_cff": {
+      "ok": true,
+      "detail": "valid YAML and required fields present"
+    },
+    "repository_file_sizes": {
+      "ok": true,
+      "detail": []
+    }
+  },
+  "statistics": {
+    "source_package": {
+      "files": 529,
+      "bytes": 79492662,
+      "csharp_files": 109,
+      "csharp_lines": 29289,
+      "csharp_comments": 1078,
+      "csharp_parse_errors": 0,
+      "projects": 11
+    },
+    "prepared_repository_before_manifest": {
+      "files": 130,
+      "bytes": 1281289,
+      "csharp_files": 89,
+      "csharp_lines": 26015,
+      "csharp_comments": 14,
+      "csharp_parse_errors": 0,
+      "projects": 8
+    }
+  },
+  "failed_checks": []
+}

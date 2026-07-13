@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use or evaluate these computational artifacts, please cite this repository and the associated doctoral thesis."
+title: "RCPSP-FRM Thesis Computational Artifacts"
+type: software
+authors:
+  - family-names: "Lima"
+    given-names: "Ricardo Rodrigues Dias de"
+version: 1.0.0
+keywords:
+  - RCPSP
+  - Flexible Resource Management
+  - Monte Carlo simulation
+  - schedule flexibility
+  - project crashing
+  - CVaR

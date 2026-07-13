@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="15.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DE48A463-2341-4A3B-B50C-4397DE52DBA0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RCPSP.WinForms</RootNamespace>
+    <AssemblyName>RCPSP.WinForms</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Forms.DataVisualization.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormBaseline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBaseline.Core.cs">
+      <DependentUpon>FormBaseline.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBaseline.FrmTab.cs">
+      <DependentUpon>FormBaseline.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBaseline.RiskTab.cs">
+      <DependentUpon>FormBaseline.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBaseline.CrashingTab.cs">
+      <DependentUpon>FormBaseline.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBaseline.ComparisonTab.cs">
+      <DependentUpon>FormBaseline.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBaseline.UiHelpers.cs">
+      <DependentUpon>FormBaseline.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBaseline.ExportContext.cs">
+      <DependentUpon>FormBaseline.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+<Compile Include="FormBaseline.Designer.cs">
+      <DependentUpon>FormBaseline.cs</DependentUpon>
+    </Compile>
+
+    <Compile Include="ExperimentalTese\ExperimentalModels.cs" />
+    <Compile Include="ExperimentalTese\ExperimentalCsv.cs" />
+    <Compile Include="ExperimentalTese\ExperimentalStatistics.cs" />
+    <Compile Include="ExperimentalTese\RcpProjectDataImporter.cs" />
+    <Compile Include="ExperimentalTese\BatchExperimentalStudyRunner.cs" />
+    <Compile Include="ExperimentalTese\FormExperimentalTese.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExperimentalTese\FormExperimentalTese.ChartsTab.cs">
+      <DependentUpon>FormExperimentalTese.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RCPSP.Application\RCPSP.Application.csproj">
+      <Project>{08b03e6d-dbbf-425a-b5a9-71e4df883154}</Project>
+      <Name>RCPSP.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RCPSP.Contracts\RCPSP.Contracts.csproj">
+      <Project>{cf0b086a-230c-44a6-b0f9-0e92dc078753}</Project>
+      <Name>RCPSP.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RCPSP.Infrastructure.Cpu\RCPSP.Infrastructure.Cpu.csproj">
+      <Project>{6151b01e-3857-4913-82d3-708ef238557a}</Project>
+      <Name>RCPSP.Infrastructure.Cpu</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormBaseline.resx">
+      <DependentUpon>FormBaseline.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
